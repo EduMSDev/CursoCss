@@ -1,16 +1,30 @@
-h1{
+html {
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+h1 {
     font-size: 20px;
     color: red;
 }
 
-h1 span{
+h1 span {
     color: #037bc0;
 }
 
-h2 span{
-    color: green;
+.sobre-nosotros {
+    background-color: red;
+    width: 200px;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
-nav a{
-    text-transform: uppercase;
+.sobre-empresa {
+    background-color: blue;
+    width: 500px;
+    padding: 100px;
+    box-sizing: border-box;
 }
