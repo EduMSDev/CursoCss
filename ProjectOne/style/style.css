@@ -2,29 +2,48 @@ html {
     box-sizing: border-box;
 }
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-h1 {
-    font-size: 20px;
-    color: red;
+/* globales*/
+a {
+    text-decoration: none;
+    color: #000;
 }
 
-h1 span {
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+
+/*header y navegacion*/
+
+.nombre-sitio {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nombre-sitio span {
     color: #037bc0;
 }
 
-.sobre-nosotros {
-    background-color: red;
-    width: 200px;
-    padding: 25px;
-    box-sizing: border-box;
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-.sobre-empresa {
-    background-color: blue;
-    width: 500px;
-    padding: 100px;
-    box-sizing: border-box;
+.hero {
+    background-image: url(../assets/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 }
