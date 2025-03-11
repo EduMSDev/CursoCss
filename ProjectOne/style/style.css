@@ -8,7 +8,19 @@ html {
     box-sizing: inherit;
 }
 
+
 /* globales*/
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair", serif;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -21,6 +33,11 @@ a {
 
 .contenedor-navegacion {
     border-top: 1px solid #e1e1e1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /*header y navegacion*/
@@ -46,4 +63,27 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    color: #FFFFFF;
+    background-color: #037bc0;
+    border-bottom-right-radius: 40px;
 }
