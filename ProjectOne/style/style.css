@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
+    /*1 rem = 10px*/
 }
 
 *,
@@ -13,12 +15,27 @@ html {
 
 body {
     font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 h1,
 h2,
 h3 {
     font-family: "Playfair", serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
 }
 
 a {
@@ -27,7 +44,7 @@ a {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -40,12 +57,24 @@ img {
     display: block;
 }
 
+.btn{
+    background-color:  #8cbc00;
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #769c02;
+}
+
 /*header y navegacion*/
 
 .nombre-sitio {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .nombre-sitio span {
@@ -55,20 +84,21 @@ img {
 .nav-principal {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2rem 0;
 }
 
 .hero {
     background-image: url(../assets/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    background-position: center center;
+    height: 55rem;
 }
 
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
 
 .categorias h2 {
@@ -78,12 +108,58 @@ img {
 .categoria a {
     text-align: center;
     display: block;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 .categoria a:hover {
     color: #FFFFFF;
     background-color: #037bc0;
-    border-bottom-right-radius: 40px;
+    border-bottom-right-radius: 4rem;
+}
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%),
+        url(../assets/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    background-position: left center;
+    padding: 10rem 0;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3;
+    color: #FFFFFF;
+}
+
+.contenido-principal{
+    padding-top: 5rem;
+}
+
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.texto-producto h3{
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio{
+ font-size: 2.8rem;
+ font-weight: 900;
 }
