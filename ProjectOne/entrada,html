@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecomnerce - Nosotros</title>
+    <title>Ecomnerce - tienda</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,20 +31,26 @@
     </div>
 
     <main class="contenido-principal contenedor">
-        <h2 class="text-center">Sobre Nosotros</h2>
-        <div class="contenido-nosotros">
-            <div class="imagen-nosotros">
-                <img src="./assets/nosotros.jpg" alt="">
+        <h2 class="text-center">Entrada Blog</h2>
+        <article class="entrada">
+            <h2>Guia de colores</h2>
+            <div class="imagen">
+                <img src="./assets/nosotros.jpg" alt="imagen">
             </div>
-            <div class="informacion-nosotros">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, explicabo, quam enim
-                    deleniti cumque porro soluta rem odio tempora velit fugiat. Dolores quo, quasi odit velit voluptate
-                    beatae officiis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum porro. Nisi inventore velit
-                    ad. Impedit numquam officia eveniet, dolorum atque placeat nulla quidem ab! Facilis, consequuntur
-                    perspiciatis? Qui, perferendis.</p>
+            <div class="entrada-meta">
+                <p>Fecha <span>22 de octubre de 2022</span></p>
+                <p>Escrito por <span>22 de octubre de 2022</span></p>
             </div>
-        </div>
+            <div class="entrada-blog">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dicta repellat accusantium
+                    voluptate dolorem possimus obcaecati atque, suscipit magnam, odit nemo vel consequatur ex
+                    voluptates nulla accusamus earum. Nihil, reiciendis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dicta repellat accusantium
+                    voluptate dolorem possimus obcaecati atque, suscipit magnam, odit nemo vel consequatur ex
+                    voluptates nulla accusamus earum. Nihil, reiciendis.</p>
+            </div>
+            <a class="btn max-width-30" href="entrada.html">Leer más</a>
+        </article>
     </main>
 
     <footer class="site-footer contenedor">
