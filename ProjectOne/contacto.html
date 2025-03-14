@@ -32,7 +32,7 @@
 
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
-        <form action="">
+        <form action="" class="formulario">
             <fieldset>
                 <legend>Tus datos</legend>
                 <div class="campo">
@@ -55,13 +55,48 @@
                     <label for="Fecha">Fecha</label>
                     <input type="date" id="Fecha" placeholder="Fecha">
                 </div>
+                <div class="campo">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="" id="Mensaje"></textarea>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Pais</legend>
+                <div class="campo">
+                    <label for="Pais">Pais</label>
+                    <select name="" id="Pais">
+                        <option value="">--Seleccione--</option>
+                        <option value="MX">Mexico</option>
+                        <option value="PR">Peru</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                    </select>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Informacion extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoria de interes</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Oficina">
+                        <option value="Recamaras">
+                        <option value="Television">
+                    </datalist>
+                </div>
             </fieldset>
+            <input class="btn" type="submit" value="Enviar Formulario">
         </form>
     </main>
 
