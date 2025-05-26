@@ -96,6 +96,17 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-witdh: 768px) {
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: red;
+    }
 }
 
 .hero {
