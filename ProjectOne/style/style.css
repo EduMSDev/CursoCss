@@ -101,7 +101,7 @@ img {
 }
 
 
-@media screen and (min-witdh: 768px) {
+@media (min-width: 768px) {
     .nav-principal {
         justify-content: space-between;
         flex-direction: row;
