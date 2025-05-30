@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*snippet quer sirve para que 1 rem sea igual a 10 pixeles*/
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc(var(--separacion) / 2) 0;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6,
+.caja7,
+.caja8,
+.caja9 {
+    background-color: gray;
+    padding: 1.8rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cajas1 {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    gap: .2rem;
+}
+
+.cajas2 {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    gap: .2rem;
+}
+
+.caja2:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+.cajas3 {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2rem;
+}
+
+.caja3:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+.caja3:nth-of-type(2) {
+    grid-row: 2 / 4;
+}
+
+
+.cajas4 {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    ;
+    grid-template-rows: repeat(3, 1fr);
+    ;
+    gap: .2rem;
+}
+
+.caja4:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+.caja4:nth-of-type(2) {
+    grid-row: 2 / 4;
+}
+
+.cajas5 {
+    display: grid;
+    grid-template-columns: repeat(4, 15rem);
+    grid-template-rows: repeat(1, 1fr);
+    gap: .2rem;
+}
+
+.caja5:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+.caja5:nth-of-type(2) {
+    grid-column: 4/4;
+    grid-row: 1/4;
+}
+
+.cajas6 {
+    display: grid;
+    grid-template: 'celda1 celda1 celda2 celda2'
+        'celda3 celda4 celda4 celda4'
+        'celda5 celda5 celda5 celda5';
+    gap: .2rem;
+    width: 50rem;
+}
+
+.caja6:nth-of-type(1) {
+    grid-area: celda1;
+}
+
+.caja6:nth-of-type(2) {
+    grid-area: celda2;
+}
+
+.caja6:nth-of-type(3) {
+    grid-area: celda3;
+}
+
+.caja6:nth-of-type(4) {
+    grid-area: celda4;
+}
+
+.caja6:nth-of-type(5) {
+    grid-area: celda5;
+}
+
+.cajas7 {
+    display: grid;
+    grid-template: 'vacio celda1 celda1'
+        'celda2 celda3 celda3'
+        'celda4 celda4 celda4';
+    gap: .2rem;
+    width: 50rem;
+}
+
+.caja7:nth-of-type(1) {
+    grid-area: celda1;
+}
+
+.caja7:nth-of-type(2) {
+    grid-area: celda2;
+}
+
+.caja7:nth-of-type(3) {
+    grid-area: celda3;
+}
+
+.caja7:nth-of-type(4) {
+    grid-area: celda4;
+}
+
+.cajas8 {
+    display: grid;
+    grid-template: 'celda6 celda2 celda3'
+        'celda4 celda5 celda1';
+    width: 50rem;
+}
+
+.caja8:nth-of-type(1) {
+    grid-area: celda1;
+}
+
+.caja8:nth-of-type(2) {
+    grid-area: celda2;
+}
+
+.caja8:nth-of-type(3) {
+    grid-area: celda3;
+}
+
+.caja8:nth-of-type(4) {
+    grid-area: celda4;
+}
+
+.caja8:nth-of-type(5) {
+    grid-area: celda5;
+}
+
+.caja8:nth-of-type(6) {
+    grid-area: celda6;
+}
+
+.cajas9 {
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2rem;
+}
+
+.caja9:nth-of-type(2) {
+    grid-row: 2/3
+}
+
+.caja9:nth-of-type(3) {
+    grid-row: 3/4
+}
