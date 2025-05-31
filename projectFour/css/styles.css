@@ -1,0 +1,353 @@
+:root {
+    --primario: #6834a6;
+    --blanco: #FFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*Cabecera o header*/
+
+header {
+    background-image: url(../img/header_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 10rem;
+}
+
+@media (min-width:768px) {
+    header {
+        background-size: 80rem;
+    }
+}
+
+.logo {
+    width: 15rem;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .logo {
+        margin: 0;
+    }
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+@media (min-width:768px) {
+    .navegacion {
+        padding-top: 0rem;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .navegacion a {
+        color: var(--blanco);
+    }
+}
+
+.parte-arriba {
+    padding-top: 3rem;
+}
+
+@media (min-width:768px) {
+    .parte-arriba {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.texto-header {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.texto-header a {
+    background-color: var(--primario);
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (min-width:768px) {
+    .texto-header {
+        text-align: left;
+    }
+
+    .texto-header a {
+        display: unset;
+    }
+}
+
+@media (min-width:768px) {
+    .parte-abajo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen-header img {
+        max-width: 30rem;
+        margin: 0 auto
+    }
+
+}
+
+/* Que es*/
+
+.titulo-que-es {
+    text-align: center;
+}
+
+.nucleus-que-es {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem
+}
+
+@media (min-width:768px) {
+    .nucleus-que-es {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
+.elemento-que-es,
+.columna-texto,
+.texto-comisiones {
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    transition: transform .3s;
+}
+
+.elemento-que-es:hover,
+.columna-texto:hover,
+.texto-comisiones:hover {
+    transform: scale(1.1);
+}
+
+.elemento-que-es h3 {
+    color: var(--primario);
+}
+
+
+/*Nucleus es seguro*/
+.seguridad {
+    background-color: var(--primario);
+    padding: 5rem 0;
+}
+
+.titulo-seguro {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.columna-texto {
+    background-color: var(--blanco);
+}
+
+@media (min-width:768px) {
+    .grid-seguro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 5rem;
+    }
+
+    .imagen-seguro img {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+/*Comisiones*/
+.titulo-comisiones {
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .grid-comisiones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+.imagen-comisiones img {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .texto-comisiones {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+.texto-comisiones h3 {
+    text-align: center;
+}
+
+.subtitulo-comisiones {
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.texto-comisiones h3 {
+    color: var(--primario);
+}
+
+/*Testimoniales*/
+.seccion-testimoniales {
+    background-color: var(--primario);
+    padding: 5rem;
+}
+
+.titulo-testimoniales {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.grid-testimoniales {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+@media (min-width:768px) {
+    .grid-testimoniales {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        row-gap: 2rem;
+    }
+}
+
+.testimoniales-texto {
+    background-color: var(--blanco);
+    padding: 1rem;
+    padding-left: 4rem;
+    top: 3.5rem;
+    left: 2rem;
+}
+
+.testimoniales-texto::before {
+    content: '';
+    background-image: url(../img/comilla.png);
+    background-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+
+.autor-testimonial {
+    text-align: right;
+    color: var(--primario);
+    font-weight: 700;
+}
+
+/*footer*/
+
+footer {
+    background-color: #5A30a0;
+    padding: 2rem;
+}
+
+.footer-logo img {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .footer-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+@media (min-width:768px) {
+    .footer-navegacion {
+        flex-direction: row;
+    }
+}
+
+.footer-navegacion a {
+    color: var(--blanco);
+}
