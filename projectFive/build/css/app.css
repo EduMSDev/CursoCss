@@ -343,6 +343,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 h1,
@@ -408,6 +409,10 @@ a {
   background-color: #5E311E;
 }
 
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
 .header {
   padding: 5rem 0;
   position: relative;
@@ -443,7 +448,27 @@ a {
 }
 
 .header-inicio {
-  background-image: url(../../img/header_inicio.jpg);
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.header-nosotros {
+  background-image: url(../img/header_nosotros.jpg);
+}
+
+.header-proceso {
+  background-image: url(../img/header-proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/.header-menu.jpg);
+}
+
+.header-galeria {
+  background-image: url(../img/.header-galeria.jpg);
+}
+
+.header-contacto {
+  background-image: url(../img/.header-contacto.jpg);
 }
 
 .nav-principal {
@@ -717,4 +742,139 @@ a {
 .footer-box a {
   font-size: 2rem;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.contenido-nosotros .imagen {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros .imagen {
+    margin: 0 2rem 0 0;
+  }
+}
+.contenido-nosotros .imagen img {
+  transform: rotate(-6deg);
+  border: 3rem solid #FFFFFF;
+  box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, 0.35);
+}
+.contenido-nosotros .texto blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 0.5rem solid #5E311E;
+  font-size: 2rem;
+}
+
+.proceso-cafe {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: 1;
+}
+.proceso-cafe:nth-child(even) .imagen {
+  order: 2;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  text-align: left;
+  margin: 0;
+  color: #5E311E;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #C39C63;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  aspect-ratio: 3/8;
+  background-position: center bottom;
+}
+@media (min-width: 480px) {
+  .contenido-menu {
+    aspect-ratio: 3/5;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    aspect-ratio: 16/6;
+    background-size: 40%;
+    background-position: center right;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    background-image: url(../img/granos-cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.form .campo {
+  margin-bottom: 2rem;
+}
+.form .campo:last-of-type {
+  margin-bottom: 0;
+}
+.form .campo label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.form .campo input:not([type=submit]),
+.form .campo select {
+  width: 100%;
+  padding: 1rem;
+  border: 0.5rem solid #5E311E;
+}
+.form .campo input[type=submit] {
+  background-color: #5E311E;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form .campo input[type=submit]:hover {
+  cursor: pointer;
 }
