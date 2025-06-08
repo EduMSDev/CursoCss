@@ -27,9 +27,9 @@
         &:hover{
             color: var.$secundario;
         }
+
+        &.activo{
+            color: var.$primario;
+        }
     }
-
-
-
-
 }
