@@ -396,6 +396,10 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #000000;
+}
+
 .text-center {
   text-align: center;
 }
@@ -672,4 +676,45 @@ ul {
   text-align: right;
   font-size: 2.4rem;
   color: #5E311E;
+}
+
+.footer {
+  background-color: #5E311E;
+}
+.footer .contenido-footer {
+  background-color: #FFFFFF;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer .copyright {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+.footer-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2.4rem;
+  color: #C39C63;
+}
+.footer-box p,
+.footer-box a {
+  font-size: 2rem;
+  margin: 0;
 }

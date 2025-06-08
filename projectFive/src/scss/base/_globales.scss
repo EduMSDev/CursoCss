@@ -60,7 +60,7 @@ h2 {
         display: block;
     }
 
-    &::after{
+    &::after {
         content: '';
         display: block;
         width: 10rem;
@@ -71,15 +71,15 @@ h2 {
     }
 }
 
-.heading-blanco{
+.heading-blanco {
     @extend h2;
     color: var.$blanco;
 
-    span{
+    span {
         color: var.$blanco;
     }
 
-    &::after{
+    &::after {
         display: none;
     }
 }
@@ -88,6 +88,10 @@ h3 {
     font-size: 3.2rem;
 }
 
-ul{
+ul {
     list-style: none;
+}
+
+a {
+    color: var.$negro;
 }
