@@ -1,0 +1,42 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+
+.pasos {
+    margin-top: var.$separacion;
+
+    .contenido {
+        background-color: var.$primario;
+    }
+
+    h2 {
+        text-align: center;
+        color: var.$blanco;
+
+        span {
+            display: block;
+            font-size: 1.8rem;
+        }
+    }
+
+    .pasos-grid {
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+
+        .paso {
+            img {
+                width: 30rem;
+                margin: 0 auto;
+                transition-property: transform;
+                transition-duration: 300ms;
+
+                &:hover {
+                    transform: scale(1.2) rotate(-4deg);
+                }
+            }
+        }
+    }
+}

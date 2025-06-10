@@ -1,0 +1,65 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: var.$secundario;
+    padding-top: var.$separacion;
+
+
+    .footer-grid {
+        @include m.tablet {
+            @include m.grid(3, 1rem);
+        }
+
+        .footer-widget {
+            margin-bottom: var.$separacion;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .heading {
+                color: var.$blanco;
+                margin: 0;
+                text-align: center;
+
+                @include m.tablet {
+                    text-align: left;
+                }
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;
+            }
+
+            .footer-nav,
+            .texto {
+                margin-top: 2rem;
+            }
+
+            .texto,
+            .footer-link {
+                font-size: 2rem;
+                line-height: 1.8;
+                color: var.$blanco;
+                text-align: center;
+
+                @include m.tablet {
+                    text-align: left;
+                }
+            }
+        }
+
+
+    }
+
+    .copyright {
+        background-color: var.$primario;
+        margin: 0;
+        color: var.$blanco;
+        text-align: center;
+        padding: 2rem;
+    }
+}

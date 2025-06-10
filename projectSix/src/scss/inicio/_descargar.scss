@@ -1,0 +1,55 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+
+.descargar {
+    background-color: var.$grisClaro;
+    padding: var.$separacion;
+
+    .descargar-grid {
+        @include m.tablet {
+            @include m.grid(2, var.$separacion);
+        }
+
+
+        .tienda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3,
+            p {
+                text-align: center;
+            }
+
+            h3 {
+                color: var.$secundario;
+                margin: 2rem 0 0 0;
+            }
+
+            .tiendas {
+                @include m.grid(2, 2rem);
+
+                .tienda-enlace {
+                    transition-property: transform;
+                    transition-duration: 300ms;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .descargar-imagen {
+            width: 50%;
+            margin: 0 auto;
+            transition-property: transform;
+            transition-duration: 300ms;
+
+            &:hover {
+                transform: rotate(4deg) scale(1.2);
+            }
+        }
+    }
+}

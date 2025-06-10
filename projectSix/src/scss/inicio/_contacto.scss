@@ -1,0 +1,59 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: var.$separacion;
+
+    @include m.tablet {
+        flex-direction: row;
+    }
+
+    .formulario {
+        background-color: var.$primario;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        h2 {
+            text-align: center;
+            color: var.$blanco;
+            margin-top: 4rem;
+        }
+
+        label {
+            color: var.$blanco;
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        input {
+            width: 100%;
+            padding: .5rem;
+            border: none;
+            margin-bottom: 2rem;
+        }
+
+        input[type="submit"] {
+            @include m.boton(var.$secundario, var.$blanco);
+
+            @include m.tablet {
+                width: 100%;
+            }
+        }
+    }
+
+    .imagen {
+        width: 30rem;
+        margin: 0 auto;
+
+        @include m.desktop {
+            width: 100%;
+        }
+    }
+
+}

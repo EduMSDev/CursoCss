@@ -1,0 +1,56 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.favoritos {
+    background-color: var.$grisClaro;
+
+    h2 {
+        padding-top: 4rem;
+        text-align: center;
+        color: var.$secundario;
+    }
+
+    .restaurantes-grid {
+        @include m.grid(1, var.$separacion);
+
+        @include m.tablet {
+            @include m.grid(2, var.$separacion);
+        }
+
+        .restaurante {
+            border-radius: 1rem;
+            padding: 2rem;
+            background-color: var.$blanco;
+            box-shadow: 0 0 2.6rem -.8rem;
+
+
+            @include m.tablet {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                gap: 4rem;
+                align-items: center;
+            }
+
+            h3 {
+                color: var.$primario;
+                margin-top: 2rem;
+                margin: 2rem 0;
+            }
+
+            .logo {
+                max-width: 20rem;
+                margin: 2rem auto 2rem auto;
+            }
+
+            .texto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @include m.tablet {
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
