@@ -1,0 +1,24 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as var;
+
+
+.header {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0 20rem 0;
+
+    .busqueda {
+        margin-top: 5rem;
+        text-align: center;
+
+        @include m.tablet {
+
+            margin-top: 30rem;
+        }
+
+        .busqueda-boton {
+            @include m.boton(var.$blanco, var.$primario);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as var;
+
+.experiencias {
+
+    .listado {
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        column-gap: 2rem;
+        @include m.scrollHorizontal;
+
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.experiencia {
+    .imagen {
+        border-radius: 1rem;
+    }
+
+    .titulo {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 1.8rem;
+    }
+}

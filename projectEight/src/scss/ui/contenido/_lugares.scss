@@ -1,0 +1,32 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as var;
+
+
+.lugares {
+
+    .lugares-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 30rem);
+        gap: 4rem;
+        @include m.scrollHorizontal;
+
+        @include m.tablet {
+            @include m.grid(2, 2rem)
+        }
+
+        @include m.desktop {
+            @include m.grid(4, 2rem);
+        }
+
+        .lugar {
+            img {
+                border-radius: 1rem;
+
+            }
+
+            .nombre {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

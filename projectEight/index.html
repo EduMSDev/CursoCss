@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,233 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body>
 
+<body>
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra-logo">
+                <p>Viaje</p>
+            </div>
+            <nav class="navegacion">
+                <a href="#">Lugares para hospedarte</a>
+                <a href="#">Experiencias</a>
+                <a href="#">Experiencias en linea</a>
+            </nav>
+
+            <nav class="login">
+                <a href="">Hazte un anfitrion</a>
+            </nav>
+        </div>
+
+        <form action="" class="formulario contenedor">
+            <div class="campo">
+                <label class="label" for="ubicacion">Ubicacion</label>
+                <input class="input" type="text" name="" id="ubicacion" placeholder="A donde viajas">
+            </div>
+            <div class="campo">
+                <label class="label" for="llegada">llegada</label>
+                <input class="input" type="date" name="" id="llegada">
+            </div>
+            <div class="campo">
+                <label class="label" for="salida">Salida</label>
+                <input class="input" type="date" name="" id="salida">
+            </div>
+            <div class="campo">
+                <label class="label" for="huespedes">huespedes</label>
+                <input class="input" type="number" name="" id="huespedes">
+            </div>
+            <div class="campo">
+                <input class="submit" type="submit" value="Buscar">
+            </div>
+        </form>
+
+        <div class="busqueda contenedor">
+            <p class="busqueda-label">No sabes a donde ir</p>
+            <a href="" class="busqueda-boton">Busqueda flexible</a>
+        </div>
+    </header>
+
+    <section class="destinos contenedor seccion">
+        <h2 class="heading"> Descubre alojamientos populares</h2>
+        <ul class="destinos-grid">
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_1.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">New York</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_2.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">Paris</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_3.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">San francisco</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_4.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">Egipto</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_5.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">Londres</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_6.webp" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">Italia</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_7.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">India</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+            <li class="destino">
+                <div class="imagen">
+                    <img src="build/img/icono_destino_8.png" alt="">
+                </div>
+                <div class="destino-informacion">
+                    <h3 class="nombre">Grecia</h3>
+                    <p class="distancia"> 4 horas en avion</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="lugares contenedor seccion">
+        <h2 class="heading">Vive en cualquier lugar del mundo</h2>
+        <div class="lugares-grid">
+            <div class="lugar">
+                <img src="build/img/vive_1.jpg" alt="">
+                <p class="nombre">Escapadas al aire libre</p>
+            </div>
+            <div class="lugar">
+                <img src="build/img/vive_2.jpg" alt="">
+                <p class="nombre">Alojamientos unicos</p>
+            </div>
+            <div class="lugar">
+                <img src="build/img/vive_3.jpg" alt="">
+                <p class="nombre">Alojamientos enteros</p>
+            </div>
+            <div class="lugar">
+                <img src="build/img/vive_1.jpg" alt="">
+                <p class="nombre">Con tu mascota</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="anfitrion contenedor seccion">
+        <div class="contenido">
+            <h2 class="heading">Animate a ser anfitrion</h2>
+            <p class="texto">Comparte tu espacio para ganar dinero</p>
+            <a href="" class="enlace">Más informacion</a>
+        </div>
+    </section>
+
+    <main class="experiencias contenedor seccion">
+        <h2 class="heading"> Descubre Experiencias</h2>
+        <p class="descripcion">Actividades unicas con expertos locales, en persona o en linea</p>
+        <div class="listado">
+            <div class="experiencia">
+                <img class="imagen" src="build/img/experiencia_1.jpg" alt="">
+                <p class="titulo">Experiencias</p>
+                <p class="descripcion">Actividades locales estes donde estes</p>
+            </div>
+            <div class="experiencia">
+                <img class="imagen" src="build/img/experiencia_2.jpg" alt="">
+                <p class="titulo">Experiencias</p>
+                <p class="descripcion">Visita una ciudad y vive en ella</p>
+            </div>
+            <div class="experiencia">
+                <img class="imagen" src="build/img/experiencia_1.jpg" alt="">
+                <p class="titulo">Experiencias en linea</p>
+                <p class="descripcion">Actividades interactivos en vivos</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid contenedor">
+            <div class="widget">
+                <h3 class="heading">Acerca de</h3>
+
+                <nav class="menu">
+                    <a class="enlace" href="">Enlace 1</a>
+                    <a class="enlace" href="">Enlace 2</a>
+                    <a class="enlace" href="">Enlace 3</a>
+                    <a class="enlace" href="">Enlace 4</a>
+                </nav>
+            </div>
+            <div class="widget">
+                <h3 class="heading">Comunidad</h3>
+
+                <nav class="menu">
+                    <a class="enlace" href="">Enlace 1</a>
+                    <a class="enlace" href="">Enlace 2</a>
+                    <a class="enlace" href="">Enlace 3</a>
+                    <a class="enlace" href="">Enlace 4</a>
+                </nav>
+            </div>
+            <div class="widget">
+                <h3 class="heading">Anfitrion</h3>
+
+                <nav class="menu">
+                    <a class="enlace" href="">Enlace 1</a>
+                    <a class="enlace" href="">Enlace 2</a>
+                    <a class="enlace" href="">Enlace 3</a>
+                    <a class="enlace" href="">Enlace 4</a>
+                </nav>
+            </div>
+            <div class="widget">
+                <h3 class="heading">Asistencia</h3>
+
+                <nav class="menu">
+                    <a class="enlace" href="">Enlace 1</a>
+                    <a class="enlace" href="">Enlace 2</a>
+                    <a class="enlace" href="">Enlace 3</a>
+                    <a class="enlace" href="">Enlace 4</a>
+                </nav>
+            </div>
+        </div>
+        <div class="barra contenedor">
+            <nav class="barra-nav">
+                <a class="enlace enlace-barra" href="">Enlace nuevo</a>
+                <a class="enlace enlace-barra" href="">Enlace nuevo</a>
+                <a class="enlace enlace-barra" href="">Enlace nuevo</a>
+                <a class="enlace enlace-barra" href="">Enlace nuevo</a>
+            </nav>
+        </div>
+    </footer>
 </body>
+
 </html>
