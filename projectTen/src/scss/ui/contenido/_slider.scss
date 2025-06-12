@@ -1,0 +1,19 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
+
+    .swiper-slide {
+        height: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        position: relative;
+        transition-property: transform;
+
+        .slider-imagen {
+            width: 100%;
+        }
+    }
+}

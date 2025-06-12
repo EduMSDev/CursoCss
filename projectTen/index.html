@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,223 @@
     <title>Carolina Spa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body>
 
+<body>
+    <header class="header contenedor">
+        <div class="header-grid">
+            <div class="logo">
+                <img src="build/img/logo.svg" alt="">
+            </div>
+
+            <nav class="sociales">
+                <a class="enlace" href="https://facebook.com"><span class="accesible">Facebook</span></a>
+                <a class="enlace" href="https://twitter.com"><span class="accesible">Twitter</span></a>
+                <a class="enlace" href="https://instagram.com"><span class="accesible">Instagram</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="navegacion">
+        <nav class="contenedor">
+            <a href="" class="enlace">Inicio</a>
+            <a href="" class="enlace">Nosotros</a>
+            <a href="" class="enlace">Servicios</a>
+            <a href="" class="enlace">Productos</a>
+            <a href="" class="enlace">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="swiper-container contenedor">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slider-imagen" src="build/img/slide_01.jpg"></div>
+            <div class="swiper-slide"><img class="slider-imagen" src="build/img/slide_02.jpg"></div>
+            <div class="swiper-slide"><img class="slider-imagen" src="build/img/slide_03.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="seccion bienvenida">
+        <h1 class="heading">bienvenida a nuestro <span>Sitio web</span></h1>
+        <p class="texto">Te sentiras como nueva con nuestros masajistas profesionales</p>
+    </section>
+
+    <section class="cards">
+        <div class="cards-grid contenedor">
+            <div class="card">
+                <img src="build/img/servicio_01.jpg" alt="" class="imagen">
+                <div class="contenido">
+                    <h2 class="heading">Conoce sobre <span>Nosotros</span></h2>
+                    <a class="enlace" hre="">Leer mas</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="build/img/servicio_02.jpg" alt="" class="imagen">
+                <div class="contenido">
+                    <h2 class="heading">Nuesrtos<span>Servicios</span></h2>
+                    <a class="enlace" hre="">Leer mas</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="build/img/servicio_03.jpg" alt="" class="imagen">
+                <div class="contenido">
+                    <h2 class="heading">Visita nuestra <span>Tienda</span></h2>
+                    <a class="enlace" hre="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horario">
+        <div class="horario-grid contenedor">
+            <div class="contenido">
+                <h3 class="heading">Horarios</h3>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus inventore,
+                    saepe qui accusantium illo reprehenderit! Officiis nisi est nemo aliquam voluptates.
+                    Voluptatibus
+                    cupiditate doloribus deleniti inventore quas veniam architecto?</p>
+                <table class="tabla">
+                    <thead class="thead">
+                        <tr>
+                            <th class="th">Dia</th>
+                            <th class="th">de</th>
+                            <th class="th">hasta</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="tr">
+                            <td class="td">Lunes</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Martes</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Miercoles</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">jueves</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Viernes</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Sabado</td>
+                            <td class="td">09:00</td>
+                            <td class="td">19:00</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Domingo</td>
+                            <td class="td" colspan="2">Cerrado</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <main class="productos contenedor seccion">
+        <h2 class="heading">Nuestros <span>productos</span></h2>
+
+        <div class="productos-grid">
+            <div class="producto">
+                <img class="imagen" src="build/img/producto_01.jpg" alt="">
+
+                <div class="contenido">
+                    <h3 class="nombre">Producto 1</h3>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa tempora
+                        quae
+                        vel unde fuga officiis </p>
+                    <p class="precio">25$</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="build/img/producto_02.jpg" alt="">
+
+                <div class="contenido">
+                    <h3 class="nombre">Producto 1</h3>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa tempora
+                        quae
+                        vel unde fuga officiis </p>
+                    <p class="precio">25$</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="build/img/producto_03.jpg" alt="">
+
+                <div class="contenido">
+                    <h3 class="nombre">Producto 1</h3>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa tempora
+                        quae
+                        vel unde fuga officiis </p>
+                    <p class="precio">25$</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="imagen" src="build/img/producto_04.jpg" alt="">
+
+                <div class="contenido">
+                    <h3 class="nombre">Producto 1</h3>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa tempora
+                        quae
+                        vel unde fuga officiis </p>
+                    <p class="precio">25$</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="cita">
+        <h2 class="heading">Realiza una cita</h2>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nam veritatis deleniti alias!
+            Soluta eius sequi neque natus quas voluptas optio deserunt cum! Voluptas ab temporibus necessitatibus
+            aspernatur in nulla.</p>
+        <a href="" class="enlace">leer mas</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid contenedor">
+            <div class="widget">
+                <h3 class="heading">Nosotros</h3>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto doloribus odio
+                    vel
+                    nostrum non quam neque. Nostrum ratione beatae deleniti sapiente hic fugit perspiciatis saepe
+                    quibusdam distinctio ab. Minima, aliquam.</p>
+            </div>
+            <div class="widget">
+                <h3 class="heading">Horario</h3>
+                <p class="texto">Lun-Vie: 9AM-7PM</p>
+                <p class="texto">Sabado: 9AM-2PM</p>
+                <p class="texto">Domingo: Cerrado</p>
+            </div>
+            <div class="widget">
+                <h3 class="heading">Contacto</h3>
+                <nav class="sociales">
+                    <a class="enlace" href="https://facebook.com"><span class="accesible">Facebook</span></a>
+                    <a class="enlace" href="https://twitter.com"><span class="accesible">Twitter</span></a>
+                    <a class="enlace" href="https://instagram.com"><span class="accesible">Instagram</span></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Carolina Spa. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
