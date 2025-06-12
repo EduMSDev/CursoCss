@@ -1,4 +1,4 @@
-@use 'variables' as v; 
+@use 'variables' as v;
 
 /** Media Queries **/
 @mixin telefono {
@@ -6,16 +6,19 @@
         @content;
     }
 }
+
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
     }
 }
+
 @mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
     }
 }
+
 @mixin desktopXL {
     @media (min-width: v.$desktopxl) {
         @content;
@@ -40,8 +43,9 @@
     @include tablet {
         width: auto;
     }
+
     &:hover {
-        background-color: darken( $bgColor, 10% );
+        background-color: darken($bgColor, 10%);
     }
 }
 
@@ -49,4 +53,25 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin heading($salto: false) {
+    font-weight: 400;
+
+    span {
+        font-weight: 700;
+
+        @if ($salto) {
+            display: block;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 1rem;
+        width: 15rem;
+        margin-top: 1rem;
+        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%);
+    }
 }

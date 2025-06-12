@@ -1,0 +1,92 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as var;
+
+.testimoniales-blog {
+    margin-top: 5rem;
+
+    @include m.desktop {
+        @include m.grid(3, 4rem);
+    }
+
+    .blog {
+        @include m.desktop {
+            grid-column: 2/4;
+        }
+
+
+    }
+
+    .heading {
+        @include m.heading(true);
+    }
+}
+
+.testimonial {
+    text-align: center;
+
+    img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .contenido {
+        background-color: var.$blanco;
+        margin-top: -10rem;
+        padding: 10rem 2rem 2rem 2rem;
+    }
+
+    .nombre {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .texto {
+        &::before {
+            content: '';
+            background-image: url(../img/quote.svg);
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.entrada {
+    background-color: var.$blanco;
+    margin-bottom: 2rem;
+
+    @include m.tablet {
+        @include m.grid(5, 2rem);
+    }
+
+    .imagen-contenedor {
+        @include m.tablet {
+            grid-column: 1/3;
+        }
+        img{
+            height: 30rem;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .contenido {
+        @include m.tablet {
+            grid-column: 3/6;
+        }
+
+        .meta{
+            font-size: 1.4rem;
+        }
+        .enlace{
+            @include m.boton(var.$primario, var.$blanco);
+            display: block;
+            @include m.tablet{
+                display: inline-block;
+            }
+        }
+    }
+}
