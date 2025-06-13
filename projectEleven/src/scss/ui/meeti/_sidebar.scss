@@ -1,0 +1,20 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.sidebar {
+    .contenido {
+        background-color: var.$secundario;
+        padding: 2rem;
+        text-align: center;
+
+        .heading,
+        .texto {
+            color: var.$blanco;
+
+            .label {
+                font-weight: 700;
+            }
+        }
+
+    }
+}

@@ -1,4 +1,4 @@
-@use 'variables' as v; 
+@use 'variables' as v;
 
 /** Media Queries **/
 @mixin telefono {
@@ -12,7 +12,7 @@
         @content;
     }
 }
-  
+
 @mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
@@ -32,13 +32,14 @@
     border: none;
     transition-property: background-color;
     transition-duration: .3s;
-    
+
 
     @include tablet {
         width: auto;
     }
+
     &:hover {
-        background-color: darken( $bgColor, 10% );
+        background-color: darken($bgColor, 10%);
     }
 }
 
@@ -46,4 +47,10 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin heading {
+    text-align: center;
+    margin: 0;
+    color: v.$gris;
 }

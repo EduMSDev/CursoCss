@@ -1,0 +1,37 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.busqueda {
+    background-color: var.$grisClaro;
+    padding: 5rem 0;
+
+    .heading {
+        @include m.heading;
+    }
+}
+
+.formulario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+        @include m.grid(4, 2rem);
+    }
+
+    .campo {
+        background-color: var.$blanco;
+        padding: 1rem;
+        border: 1px solid lighten($color: var.$gris, $amount: 50%);
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    .submit {
+        @include m.boton(var.$primario, var.$blanco);
+        margin-top: 0;
+    }
+}

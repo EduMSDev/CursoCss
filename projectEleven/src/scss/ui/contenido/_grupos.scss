@@ -1,0 +1,33 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+.grupos {
+    background-image: linear-gradient(to bottom, var.$primario 0%, var.$primario 50%, var.$secundario 50%, var.$secundario 100%);
+    padding: 5rem 0;
+    color: var.$blanco;
+
+    @include m.tablet {
+        background-image: linear-gradient(to right, var.$primario 0%, var.$primario 50%, var.$secundario 50%, var.$secundario 100%);
+    }
+
+    .grupos-grid {
+        @include m.grid(1, 5rem);
+
+        @include m.tablet {
+            @include m.grid(2, 5rem);
+        }
+
+        .bloque {
+            .heading {
+                font-size: 3rem;
+            }
+
+            .texto {
+                color: var.$blanco;
+                font-size: 2.4rem;
+                line-height: 2;
+            }
+        }
+
+    }
+}

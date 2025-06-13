@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,146 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
 
-    
+    <header class="header contenedor">
+        <div class="logo">
+            <a href="index.html">
+                <img src="build/img/logo.png" alt="">
+            </a>
+        </div>
+        <nav class="navegacion">
+            <a class="enlace crear" href="">Crear grupo</a>
+            <a class="enlace" href="">Iniciar sesion</a>
+            <a class="enlace" href="">Registrarsee</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="texto">Encuentra o Crea un grupo para compartir lo que mas te gusta</h1>
+        <a class="hero-enlace" href="">Obtener una cuenta</a>
+    </section>
+
+    <section class="busqueda">
+        <h2 class="heading">Busca un grupo en tu ciudad</h2>
+        <div class="contenedor">
+            <form action="" class="formulario">
+                <select class="campo" name="" id="">
+                    <option value="">Programacion</option>
+                    <option value="">Diseño</option>
+                    <option value="">Negocios</option>
+                </select>
+                <input type="text" class="campo" placeholder="Nombre evento">
+                <input type="text" class="campo" placeholder="Ciudad o pais">
+                <input type="submit" class="submit" value="Buscar">
+            </form>
+        </div>
+    </section>
+
+    <main class="eventos contenedor">
+        <h2 class="heading">Proximos eventos</h2>
+        <div class="eventos-grid">
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen1.jpg" alt="" class="imagen">
+                    <div class="contenido">
+                        <p class="fecha">Jueves 30 de septiembre de 2022</p>
+                        <h3 class="nombre">Ideas de negocio</h3>
+
+                        <div class="autor">
+                            <div class="autor-imagen">
+                                <img src="build/img/perfil1.jpg" alt="">
+                            </div>
+                            <div class="autor-informacion">
+                                <p class="organizado">Organizado por:</p>
+                                <p class="nombre">Juan de la torre</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen2.jpg" alt="" class="imagen">
+                    <div class="contenido">
+                        <p class="fecha">Jueves 30 de septiembre de 2022</p>
+                        <h3 class="nombre">Bitcoin y otras criptos</h3>
+
+                        <div class="autor">
+                            <div class="autor-imagen">
+                                <img src="build/img/perfil1.jpg" alt="">
+                            </div>
+                            <div class="autor-informacion">
+                                <p class="organizado">Organizado por:</p>
+                                <p class="nombre">Juan de la torre</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="evento">
+                <a href="meeti.html">
+                    <img src="build/img/imagen3.jpg" alt="" class="imagen">
+                    <div class="contenido">
+                        <p class="fecha">Jueves 30 de septiembre de 2022</p>
+                        <h3 class="nombre">Pizza paso a paso</h3>
+
+                        <div class="autor">
+                            <div class="autor-imagen">
+                                <img src="build/img/perfil2.jpg" alt="">
+                            </div>
+                            <div class="autor-informacion">
+                                <p class="organizado">Organizado por:</p>
+                                <p class="nombre">Josue perez</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
+
+<section class="categorias">
+    <h2 class="heading">Categorias</h2>
+
+    <ul class="categorias-grid contenedor">
+        <li class="categoria">
+            <img class="imagen" src="build/img/categoria_1.jpg" alt="">
+            <p class="nombre">Programacion</p>
+        </li>
+        <li class="categoria">
+            <img class="imagen" src="build/img/categoria_2.jpg" alt="">
+            <p class="nombre">Diseño UX y UI</p>
+        </li>
+        <li class="categoria">
+            <img class="imagen" src="build/img/categoria_3.jpg" alt="">
+            <p class="nombre">Negocios e ideas</p>
+        </li>
+    </ul>
+</section>
+
+<section class="grupos">
+    <div class="grupos-grid contenedor">
+        <div class="bloque">
+            <h3 class="heading">Crea un grupo</h3>
+            <p class="texto">Comparte lo que te gusta o tu pasion con los demas, crea tu propio grupoy eventos.</p>
+        </div>
+        <div class="bloque">
+            <h3 class="heading">Unete a un grupo</h3>
+            <p class="texto">Conoce personas con tus mismos gustos y pasiones</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer contenedor">
+    <nav class="navegacion">
+            <a class="enlace crear" href="">Crear grupo</a>
+            <a class="enlace" href="">Iniciar sesion</a>
+            <a class="enlace" href="">Registrarsee</a>
+        </nav>
+        <p class="copyright">Todos los derechos reservados</p>
+</footer>
+
 </html>

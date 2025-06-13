@@ -1,0 +1,56 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+
+.eventos {
+    padding: 5rem 0;
+
+    .heading {
+        @include m.heading;
+    }
+
+    .eventos-grid {
+        margin-top: 2rem;
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.evento {
+    border: 1px solid var.$grisClaro;
+
+    .contenido {
+        padding: 2rem;
+
+        .fecha {
+            font-size: 1.4rem;
+        }
+
+        .nombre {
+            color: var.$gris;
+            margin: 1rem 0;
+        }
+
+        .autor {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            .autor-imagen{
+                width: 10rem;
+                border-radius: 5rem;
+                overflow: hidden;
+            }
+
+            .autor-informacion{
+                .organizado{
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+}
